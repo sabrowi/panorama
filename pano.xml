@@ -13,4 +13,12 @@
 		<cube url="panorama.tiles/pano_%s.jpg" />
 	</image>
 
+	<action name="hotspot_animate">
+		if(hotspot[%1].loaded,
+			tween(hotspot[%1].atv, 0.0, 1.0, default, tween(hotspot[%1].atv, 3.0, 1.0, default, hotspot_animate(%1) ) );
+		);
+	</action>
+
+	<hotspot name="spot1" onloaded="hotspot_animate(get(name));" type="image" url="arrow.png" ath="-40" atv="0" scale="0.5" onclick="openurl(https://www.youtube.com/watch?v=c_YwGf3aCyc&amp;t=17s,_blank);" />
+
 </krpano>
