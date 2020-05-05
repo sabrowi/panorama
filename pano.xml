@@ -19,6 +19,10 @@
 		);
 	</action>
 
-	<hotspot name="spot1" onloaded="hotspot_animate(get(name));" type="image" url="arrow.png" ath="-40" atv="0" scale="0.5" onclick="openurl(https://www.youtube.com/watch?v=c_YwGf3aCyc&amp;t=17s,_blank);" />
+	<action name="open_page">
+		jscall('showmodal("Checkkkk")');
+	</action>
+
+	<hotspot name="spot1" onloaded="hotspot_animate(get(name));" type="image" url="arrow.png" ath="-40" atv="0" scale="0.5" onclick="open_page();" />
 
 </krpano>
